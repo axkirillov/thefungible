@@ -27,6 +27,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    "static/css/main.css",
+    "static/css/grid.css"
   ],
 
   /*

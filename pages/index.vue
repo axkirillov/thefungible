@@ -1,66 +1,144 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        thefungible
-      </h1>
-      <h2 class="subtitle">
-        Crypto news website
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+  <div>
+    <Header/>
+  
+    <section>
+      <div class="row">
+        <div class="col span-1-of-3">
+          <!-- Card Crypto Love-->
+          <div class="card">
+            <h2>Sub<span>title</span></h2>
+            <h1>cryptolove</h1>
+            <img src="img/cryptolove-img.jpg" alt="crypto love image" class="crypto-image">
+            <p class="card-text">
+              BTC transaction fees bottomed out earlier this year in February, and since then have remained relatively stable at a median of approximately USD0.10. This is a significant climb down from last year’s all-time high of $34.00 on 23 December.
+              <br />
+              
+            </p>
+            <div class="card-bottom">
+              <div class="like"><img src="img/like-icon.png" class="like-icon" alt="img"><span>508</span></div>
+              <div class="button-group">
+                <button class="btn-sm">Icons</button>
+                <button class="btn-sm">Banners</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
+        <div class="col span-1-of-3">
+          <div class="card">
+            <h2>Sub<span>title</span></h2>
+            <h1>cryptolove</h1>
+            <img src="img/cryptolove-img.jpg" alt="crypto love image" class="crypto-image">
+            <p class="card-text">
+              BTC transaction fees bottomed out earlier this year in February, and since then have remained relatively stable at a median of approximately USD0.10. This is a significant climb down from last year’s all-time high of $34.00 on 23 December.
+              <br />
+            </p>
+            <div class="card-bottom">
+              <div class="like"><img src="img/like-icon.png" class="like-icon" alt="img"><span>508</span></div>
+              <div class="button-group">
+                <button class="btn-sm">Icons</button>
+                <button class="btn-sm">Banners</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col span-1-of-3">
+          <div class="card">
+            <h2>Sub<span>title</span></h2>
+            <h1>cryptolove</h1>
+            <img src="img/cryptolove-img.jpg" alt="crypto love image" class="crypto-image">
+            <p class="card-text">
+              BTC transaction fees bottomed out earlier this year in February, and since then have remained relatively stable at a median of approximately USD0.10. This is a significant climb down from last year’s all-time high of $34.00 on 23 December.
+              <br />
+            </p>
+            <div class="card-bottom">
+              <div class="like"><img src="img/like-icon.png" class="like-icon" alt="img"><span>508</span></div>
+              <div class="button-group">
+                <button class="btn-sm">Icons</button>
+                <button class="btn-sm">Banners</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+       <div class="row">
+        <div class="col span-1-of-3">
+          <!-- Card Crypto Love-->
+          <div class="card">
+            <h2>Sub<span>title</span></h2>
+            <h1>cryptolove</h1>
+            <img src="img/cryptolove-img.jpg" alt="crypto love image" class="crypto-image">
+            <p class="card-text">
+              BTC transaction fees bottomed out earlier this year in February, and since then have remained relatively stable at a median of approximately USD0.10. This is a significant climb down from last year’s all-time high of $34.00 on 23 December.
+              <br />              
+            </p>
+            <div class="card-bottom">
+              <div class="like"><img src="img/like-icon.png" class="like-icon" alt="img"><span>508</span></div>
+              <div class="button-group">
+                <button class="btn-sm">Icons</button>
+                <button class="btn-sm">Banners</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
+        <div class="col span-1-of-3">
+          <div class="card">
+            <h2>Sub<span>title</span></h2>
+            <h1>cryptolove</h1>
+            <img src="img/cryptolove-img.jpg" alt="crypto love image" class="crypto-image">
+            <p class="card-text">
+              BTC transaction fees bottomed out earlier this year in February, and since then have remained relatively stable at a median of approximately USD0.10. This is a significant climb down from last year’s all-time high of $34.00 on 23 December.
+            </p>
+            <div class="card-bottom">
+              <div class="like"><img src="img/like-icon.png" class="like-icon" alt="img"><span>508</span></div>
+              <div class="button-group">
+                <button class="btn-sm">Icons</button>
+                <button class="btn-sm">Banners</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col span-1-of-3">
+          <div class="card">
+            <h2>Sub<span>title</span></h2>
+            <h1>cryptolove</h1>
+            <img src="img/cryptolove-img.jpg" alt="crypto love image" class="crypto-image">
+            <p class="card-text">
+              BTC transaction fees bottomed out earlier this year in February, and since then have remained relatively stable at a median of approximately USD0.10. This is a significant climb down from last year’s all-time high of $34.00 on 23 December.
+              <br />
+            </p>
+            <div class="card-bottom">
+              <div class="like"><img src="img/like-icon.png" class="like-icon" alt="img"><span>508</span></div>
+              <div class="button-group">
+                <button class="btn-sm">Icons</button>
+                <button class="btn-sm">Banners</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Footer/>
+  </div>
+  
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Header from '~/components/Header.vue'
+import Footer from '~/components/Footer.vue'
+
 
 export default {
   components: {
-    Logo
+    Header,
+    Footer
   }
 }
 </script>
 
 <style>
 
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>

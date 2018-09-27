@@ -1,0 +1,648 @@
+@font-face {
+  font-family: Verdana;
+  src: url(fonts/Verdana.ttf);
+}
+
+@font-face {
+  font-family: Bergen Mono;
+  src: url(fonts/BergenMono-Webfont/BergenMono-Regular.eot);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #F2F5ED;
+}
+
+.row {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Bergen Mono;
+  color: #818991;
+}
+
+h1 {
+  font-size: 25px;
+  line-height: 32.6px;
+}
+
+h2 {
+  font-size: 13.3px;
+  line-height: 15.5px;
+  margin-bottom: 6px;
+}
+
+h1 span {
+  color: #CE242B;
+}
+
+h2 span {
+  color: #CE242B;
+}
+
+.card-text {
+  /* font-family: Verdana; */
+  font-size: 10px;
+  line-height: 17px;
+  color: #818991;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.btn-sm, .btn-md {
+  display: block;
+  font-size: 12px;
+  border-radius: 100px;
+  text-align: center;
+}
+
+.btn-sm {
+  width: 75px;
+  height: 21px;
+}
+
+.btn-md {
+  width: 94px;
+  height: 21px;
+}
+
+button {
+  border: none;
+  background-color: #CFD6D3;
+  color: #818991;
+  cursor: pointer;
+  font-family: Bergen Mono;
+}
+
+.button-group {
+  display: flex;
+}
+
+.button-group button:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* ----- Header -----*/
+
+header {
+  position: relative;
+  height: 97px;
+  width: auto;
+  background-color: #fff;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.logo {
+  text-transform: uppercase;
+}
+
+.logo a {
+  font-size: 31px;
+  font-family: Bergen Mono;
+  font-weight: bold;
+  color: #818991;
+  line-height: 31px;
+  display: flex;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 30px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.logo span {
+  color: #CE242B;
+}
+
+.numbers {
+  display: flex;
+  text-transform: uppercase;
+  color: #818991;
+  font-family: Bergen Mono;
+  font-size: 17px;
+}
+
+.numbers>*:not(:last-child) {
+  margin-right: 40px;
+}
+
+.numbers p {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.numbers span {
+  color: #231F20;
+  margin-left: 15px;
+  font-weight: 400;
+}
+
+.numbers img {
+  display: inline-block;
+  height: 5px;
+  margin-left: 8px
+}
+
+.search-bar {
+  width: 170px;
+  height: 22px;
+  display: flex;
+}
+
+.search-input {
+  border: none;
+  border-bottom: 1px solid #818991;
+  width: 100%;
+  margin-right: -15px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-button {
+  border: none;
+  height: 20px;
+  background-color: transparent;
+}
+
+.search-button img {
+  width: 15px;
+  height: 15px;
+}
+
+/* ----- Section Cards  -----*/
+
+section {
+  padding: 20px 0;
+}
+
+.card {
+  width: 360px;
+  background-color: #fff;
+  padding: 20px 13px;
+}
+
+.card-bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+  color: #818991;
+}
+
+.like-icon {
+  height: 19.5px;
+}
+
+.like span {
+  margin-left: 7px;
+  font-size: 13.3px;
+  font-family: Bergen Mono;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  width: 192px;
+  height: 60px;
+  border: 1px solid #CFD6D3;
+  margin-top: 8px;
+}
+
+.banner img {
+  display: block;
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.banner h1 {
+  margin-left: 5px;
+}
+
+.crypto-image {
+  width: 100%;
+  ;
+  height: 292px;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 17px;
+}
+
+.uikit-buttons {
+  display: flex;
+  margin-top: 17px;
+}
+
+.uikit-buttons span {
+  font-size: 17.12px;
+  text-transform: uppercase;
+  color: #818991;
+  font-family: Bergen Mono;
+}
+
+.focus {
+  margin-right: 20px;
+}
+
+.focus span {
+  color: #CE242B;
+}
+
+.focus, .hover {
+  display: flex;
+  flex-direction: column;
+}
+
+.focus button {
+  width: 120px;
+  height: 33px;
+  text-transform: uppercase;
+  font-size: 15.4px;
+  margin-top: 10px;
+}
+
+.focus button:nth-child(2) {
+  background-color: #818991;
+  color: #fff;
+}
+
+.focus button:nth-child(3) {
+  background-color: #CE242B;
+  color: #fff;
+}
+
+.focus button:nth-child(4) {
+  background-color: #231F20;
+  color: #fff;
+}
+
+.hover button {
+  width: 120px;
+  height: 33px;
+  text-transform: uppercase;
+  font-size: 15.4px;
+  margin-top: 10px;
+}
+
+.hover button:nth-child(2) {
+  border: 1px solid #818991;
+  background-color: transparent;
+  color: #818991;
+}
+
+.hover button:nth-child(3) {
+  border: 1px solid #CE242B;
+  background-color: transparent;
+  color: #CE242B;
+}
+
+.hover button:nth-child(4) {
+  border: 1px solid #231F20;
+  background-color: transparent;
+  color: #231F20;
+}
+
+.uikit .search-bar {
+  width: 100%;
+  margin-top: 37px;
+  margin-bottom: 30px;
+}
+
+.uikit .search-input::placeholder {
+  font-size: 12px;
+  font-family: Bergen Mono;
+  color: #818991;
+}
+
+.uikit input[type="text"] {
+  font-size: 12px;
+  font-family: Bergen Mono;
+  color: #818991;
+}
+
+/* .input-field {} */
+
+.input-field input {
+  width: 100%;
+  height: 33px;
+  font-size: 12px;
+  padding: 0 10px;
+  border: 1px solid #CFD6D3;
+}
+
+.input-field input::placeholder {
+  font-size: 12px;
+  font-family: Bergen Mono;
+  color: #818991;
+}
+
+.input-field input[type="text"] {
+  font-size: 12px;
+  font-family: Bergen Mono;
+  color: #818991;
+}
+
+.disabled input {
+  margin-top: 13px;
+  border: 1px solid #CFD6D3;
+  background-color: #FCEAEA;
+}
+
+.dropdown {
+  margin-top: 10px;
+  border-radius: 100px;
+}
+
+select {
+  border-radius: 0;
+  font-size: 12px;
+  font-family: Bergen Mono;
+  color: #818991;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown select {
+  width: 100%;
+  height: 33px;
+  font-size: 12px;
+  padding: 0 10px;
+  border: 1px solid #CFD6D3;
+  background-color: #fff;
+  -webkit-appearance: button;
+}
+
+.dropdown::before {
+  content: url(../img/arrow-down.png);
+  position: absolute;
+  right: 10px;
+  margin-top: 5px;
+  pointer-events: none;
+}
+
+.group-check {
+  margin-top: 24px;
+  display: flex;
+}
+
+.group-check .check-box {
+  margin-right: 50px;
+}
+
+.checkbox, .radio {
+  position: relative;
+}
+
+.radio-box, .check-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.check-box .check:last-child, .radio-box .radio:last-child {
+  margin-top: 10px;
+}
+
+.radio-box input, .check-box input {
+  display: none;
+}
+
+.check, .radio {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  padding-left: 25px;
+  position: relative;
+  color: #818991;
+  cursor: pointer;
+  font-family: Bergen Mono;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.check label::before {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background-color: #dcdde1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.check label::after {
+  content: '';
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.check input:checked+label::after {
+  content: url(../img/arrow-white.png);
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #CE242B;
+  text-align: center;
+}
+
+.radio label::before {
+  content: '';
+  width: 17px;
+  height: 17px;
+  border: 3px solid #dcdde1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.radio label::after {
+  content: '';
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  border: 3px solid transparent;
+  top: 2px;
+  left: 2px;
+  box-sizing: border-box;
+  background-clip: content-box;
+}
+
+input:checked+label::after {
+  background-color: #dcdde1;
+}
+
+.radio label::before, .radio label::after {
+  border-radius: 100px;
+}
+
+.tooltip {
+  margin-top: 20px;
+  width: 100%;
+  height: 52px;
+  background-color: #CFD6D3;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 52px;
+  color: #818991;
+  font-size: 15.4px;
+  position: relative;
+  font-family: Bergen Mono;
+}
+
+.tooltip::before {
+  display: block;
+  content: url(../img/arrow-up.png);
+  position: absolute;
+  background-size: 15px 15px;
+  top: -30px;
+  right: 35px;
+}
+
+/* ----- Footer -----*/
+
+footer {
+  font-family: Bergen Mono;
+  height: 120px;
+  background-color: #fff;
+  width: 100%;
+  padding-top: 44px;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-footer {
+  text-transform: uppercase;
+}
+
+.logo-footer a {
+  font-size: 31px;
+  font-family: Bergen Mono;
+  font-weight: bold;
+  color: #CFD6D3;
+  line-height: 31px;
+  display: flex;
+  text-decoration: none;
+}
+
+.logo-footer img {
+  width: 30px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.copyright {
+  color: #818991;
+  font-size: 12px;
+}
+
+footer .social {
+  display: flex;
+  align-items: center;
+}
+
+footer .social a:not(:last-child) {
+  margin-right: 10px;
+}
+
+footer .social a {
+  width: 26.639px;
+  height: 26.639px;
+}
+
+footer .social a:hover {
+  opacity: .9;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  header {
+    height: 150px;
+    padding: 0 15px;
+  }
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  .numbers {
+    margin-top: 10px;
+  }
+  .numbers>*:not(:last-child) {
+    margin-right: 10px;
+  }
+  .search-bar {
+    margin-top: 20px;
+  }
+  .row {
+    padding: 0 15px;
+  }
+  .card {
+    width: 100%;
+  }
+  .card {
+    margin-bottom: 10px;
+  }
+  footer {
+    height: auto;
+    padding: 20px;
+  }
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo-footer {
+    margin-bottom: 10px;
+  }
+  .copyright {
+    margin-bottom: 10px;
+  }
+}
