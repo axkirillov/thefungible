@@ -6,26 +6,63 @@
     </div>
     <div class="numbers">
       <div class="btc">
-        <p>BTC<span>6481$</span><img src="img/arrow-down.svg" alt="img"></p>
+        <p v-if="btc">BTC <span>{{ btc.price_usd | decimal }}$</span></p>
       </div>
-      <div class="MHS">
-        <p>ETH <span>300$</span><img src="img/arrow-down.svg" alt="img"></p>
+      <div class="eth">
+        <p v-if="eth">ETH <span>{{ eth.price_usd | decimal }}$</span></p>
       </div>
-      <div class="L2">
-        <p>EOS<span>5$</span><img src="img/arrow-down.svg" alt="img"></p>
+      <div class="eos">
+        <p v-if="eos">EOS <span>{{ eos.price_usd | decimal }}$</span></p>
       </div>
 
     </div>
-    <form action="#" class="search-bar">
+    <!-- <div class="spacer"></div> -->
+    <!-- <form action="#" class="search-bar">
       <input type="text" class="search-input" placeholder="">
       <button class="search-button">
         <img src="img/search-icon.png" alt="img">
       </button>
-    </form>
+    </form> -->
   </div>
 </header>
 </template>
 
-<style>
+<script>
+import axios from 'axios'
 
+export default {
+  data () {
+    return {
+      btc: null,
+      eth: null,
+      eos: null
+    }
+  },
+  filters: {
+    decimal (value) {
+      return parseFloat(value).toFixed(0)
+    }
+  },
+  mounted () {
+    axios
+      .get('https://api.coinmarketcap.com/v1/ticker/bitcoin/')
+      .then(response => (this.btc = response.data[0]))
+    axios
+      .get('https://api.coinmarketcap.com/v1/ticker/ethereum/')
+      .then (response => (this.eth = response.data[0]))
+    axios
+      .get('https://api.coinmarketcap.com/v1/ticker/eos/')
+      .then (response => (this.eos = response.data[0]))
+  }
+}
+</script>
+
+
+<style>
+.spacer{
+  width: 170px;
+}
+.numbers {
+  margin-right: 10px;
+}
 </style>
