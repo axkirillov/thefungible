@@ -1,6 +1,7 @@
 @font-face {
   font-family: Verdana;
-  src: url("../fonts/Verdana.ttf");
+  src: url("../fonts/VerdanaReg.ttf");
+  font-weight: normal;
   font-style: normal;
 }
 
