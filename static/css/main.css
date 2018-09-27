@@ -221,8 +221,11 @@ section {
 .card {
   width: 360px;
   background-color: #fff;
-  padding: 20px 13px;
+  padding: 20px 13px;  
+  transition: all .2s ease-in-out;
 }
+
+.card:hover { transform: scale(1.025); }
 
 .card-bottom {
   margin-top: 20px;
