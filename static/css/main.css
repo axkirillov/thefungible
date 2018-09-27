@@ -1,11 +1,23 @@
 @font-face {
   font-family: Verdana;
-  src: url(fonts/Verdana.ttf);
+  src: url('../fonts/Verdana.ttf');
 }
 
 @font-face {
-  font-family: Bergen Mono;
-  src: url(fonts/BergenMono-Webfont/BergenMono-Regular.eot);
+  font-family: bergenmono-regular;
+  src: url('../fonts/bergenmono-regular-webfont.woff') format('woff2'),
+       url('../fonts/bergenmono-regular-webfont.woff2') format('woff'),
+       url('../fonts/bergenmono-regular-webfont.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: bergenmono;
+  src: url('../fonts/BergenMono-Bold.woff2') format('woff2'),
+       url('../fonts/BergenMono-Bold.woff') format('woff'),
+       url('../fonts/BergenMono-Bold.eot');
+  font-weight: normal;
+  font-style: normal;
 }
 
 *, *::before, *::after {
