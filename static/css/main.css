@@ -1,23 +1,24 @@
 @font-face {
   font-family: Verdana;
-  src: url('../fonts/Verdana.ttf');
+  src: url("../fonts/Verdana.ttf");
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "bergenmono-regular";
-  src: url('../fonts/bergenmono-regular-webfont.woff') format('woff2'),
-       url('../fonts/bergenmono-regular-webfont.woff2') format('woff'),
-       url('../fonts/bergenmono-regular-webfont.ttf');
-  font-weight: normal;
-  font-style: normal;
+    font-family: bergenmono-regular;
+    src: url('../fonts/bergenmono-regular-webfont.woff') format('woff2'),
+         url('../fonts/bergenmono-regular-webfont.woff2') format('woff'),
+         url('../fonts/bergenmono-regular-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-  font-family: "Bergen Mono";
-  src: url('../fonts/BergenMono-Bold.woff2') format('woff2'),
-       url('../fonts/BergenMono-Bold.woff') format('woff'),
-       url('../fonts/BergenMono-Bold.eot');
-  font-weight: normal;
-  font-style: normal;
+    font-family: bergenmono;
+    src: url('../fonts/BergenMono-Bold.woff2') format('woff2'),
+         url('../fonts/BergenMono-Bold.woff') format('woff'),
+         url('../fonts/BergenMono-Bold.eot');
+    font-weight: normal;
+    font-style: normal;
 }
 
 *, *::before, *::after {
@@ -47,7 +48,7 @@ html {
 h1, h2 {
   text-transform: uppercase;
   font-weight: bold;
-  font-family: "Bergen Mono";
+  font-family: bergenmono;
   color: #818991;
 }
 
@@ -71,7 +72,7 @@ h2 span {
 }
 
 .card-text {
-  /* font-family: Verdana; */
+  font-family: Verdana;
   font-size: 10px;
   line-height: 17px;
   color: #818991;
@@ -101,7 +102,7 @@ button {
   background-color: #CFD6D3;
   color: #818991;
   cursor: pointer;
-  font-family: "Bergen Mono";
+  font-family: bergenmono-regular;
 }
 
 .button-group {
@@ -133,7 +134,7 @@ header .container {
 
 .logo a {
   font-size: 31px;
-  font-family: "Bergen Mono";
+  font-family: bergenmono;
   font-weight: bold;
   color: #818991;
   line-height: 31px;
@@ -155,7 +156,7 @@ header .container {
   display: flex;
   text-transform: uppercase;
   color: #818991;
-  font-family: "Bergen Mono";
+  font-family: bergenmono;
   font-size: 17px;
 }
 
@@ -172,7 +173,8 @@ header .container {
 .numbers span {
   color: #231F20;
   margin-left: 15px;
-  font-weight: 400;
+  font-family: bergenmono-regular;
+
 }
 
 .numbers img {
@@ -219,10 +221,7 @@ section {
   width: 360px;
   background-color: #fff;
   padding: 20px 13px;
-  transition: all .2s ease-in-out;
 }
-
-.card:hover { transform: scale(1.025); }
 
 .card-bottom {
   margin-top: 20px;
@@ -244,7 +243,8 @@ section {
 .like span {
   margin-left: 7px;
   font-size: 13.3px;
-  font-family: "Bergen Mono";
+  font-family: bergenmono-regular;
+  font-weight: regular;
 }
 
 .banner {
@@ -285,7 +285,7 @@ section {
   font-size: 17.12px;
   text-transform: uppercase;
   color: #818991;
-  font-family: "Bergen Mono";
+  font-family: bergenmono-regular;
 }
 
 .focus {
@@ -358,17 +358,16 @@ section {
 
 .uikit .search-input::placeholder {
   font-size: 12px;
-  font-family: "Bergen Mono";
+  font-family: bergenmono-regular;
   color: #818991;
 }
 
 .uikit input[type="text"] {
   font-size: 12px;
-  font-family: "Bergen Mono";
+  font-family: bergenmono-regular;
   color: #818991;
 }
 
-/* .input-field {} */
 
 .input-field input {
   width: 100%;
@@ -380,13 +379,13 @@ section {
 
 .input-field input::placeholder {
   font-size: 12px;
-  font-family: "Bergen Mono";
+  font-family: bergenmono-regular;
   color: #818991;
 }
 
 .input-field input[type="text"] {
   font-size: 12px;
-  font-family: "Bergen Mono";
+  font-family: bergenmono-regular;
   color: #818991;
 }
 
@@ -404,7 +403,7 @@ section {
 select {
   border-radius: 0;
   font-size: 12px;
-  font-family: "Bergen Mono";
+  font-family: bergenmono-regular;
   color: #818991;
 }
 
@@ -466,7 +465,7 @@ label {
   position: relative;
   color: #818991;
   cursor: pointer;
-  font-family: "Bergen Mono";
+  font-family: bergenmono-regular;
   font-size: 12px;
   line-height: 20px;
 }
@@ -542,7 +541,7 @@ input:checked+label::after {
   color: #818991;
   font-size: 15.4px;
   position: relative;
-  font-family: "Bergen Mono";
+  font-family: bergenmono-regular;
 }
 
 .tooltip::before {
@@ -557,7 +556,7 @@ input:checked+label::after {
 /* ----- Footer -----*/
 
 footer {
-  font-family: "Bergen Mono";
+  font-family: bergenmono-regular;
   height: 120px;
   background-color: #fff;
   width: 100%;
@@ -576,7 +575,7 @@ footer .container {
 
 .logo-footer a {
   font-size: 31px;
-  font-family: "Bergen Mono";
+  font-family: bergenmono-regular;
   font-weight: bold;
   color: #CFD6D3;
   line-height: 31px;
