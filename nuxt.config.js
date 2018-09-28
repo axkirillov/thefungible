@@ -1,5 +1,7 @@
 const pkg = require('./package')
 
+const config = require('./.contentful.json')
+
 module.exports = {
   mode: 'universal',
 
@@ -61,5 +63,9 @@ module.exports = {
     extend(config, ctx) {
       
     }
+  },
+  env: {
+    CTF_SPACE_ID: config.CTF_SPACE_ID,
+    CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN,
   }
 }
