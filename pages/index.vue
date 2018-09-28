@@ -37,7 +37,7 @@ import Footer from '~/components/Footer.vue'
 
 import {createClient} from '~/plugins/contentful.js'
 
-
+const client = createClient()
 
 
 export default {
