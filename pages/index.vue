@@ -3,103 +3,18 @@
     <Header/>
   
     <section>
-      <div class="row">
-        <div class="col span-1-of-3">
-          <!-- Card Crypto Love-->
-          <div class="card">
-            <h2>Sub<span>title</span></h2>
-            <h1>cryptolove</h1>
-            <img src="img/cryptolove-img.jpg" alt="crypto love image" class="crypto-image">
-            <p class="card-text">
-              BTC transaction fees bottomed out earlier this year in February, and since then have remained relatively stable at a median of approximately USD0.10. This is a significant climb down from last year’s all-time high of $34.00 on 23 December.
-              <br />
-              
-            </p>
-          </div>
-          <!-- Card -->
-        </div>
-        <div class="col span-1-of-3">
-          <!-- Card Crypto Love-->
-          <div class="card">
-            <h2>Sub<span>title</span></h2>
-            <h1>cryptolove</h1>
-            <img src="img/cryptolove-img.jpg" alt="crypto love image" class="crypto-image">
-            <p class="card-text">
-              BTC transaction fees bottomed out earlier this year in February, and since then have remained relatively stable at a median of approximately USD0.10. This is a significant climb down from last year’s all-time high of $34.00 on 23 December.
-              <br />
-              
-            </p>
-          </div>
-          <!-- Card -->
-        </div>
-        <div class="col span-1-of-3">
-          <!-- Card Crypto Love-->
-          <div class="card">
-            <h2>Sub<span>title</span></h2>
-            <h1>cryptolove</h1>
-            <img src="img/cryptolove-img.jpg" alt="crypto love image" class="crypto-image">
-            <p class="card-text">
-              BTC transaction fees bottomed out earlier this year in February, and since then have remained relatively stable at a median of approximately USD0.10. This is a significant climb down from last year’s all-time high of $34.00 on 23 December.
-              <br />
-              
-            </p>
-          </div>
-          <!-- Card -->
-        </div>  
-      </div>
-      <div class="row">
-        <div class="col span-1-of-3">
-          <!-- Card Crypto Love-->
-          <div class="card">
-            <h2>Sub<span>title</span></h2>
-            <h1>cryptolove</h1>
-            <img src="img/cryptolove-img.jpg" alt="crypto love image" class="crypto-image">
-            <p class="card-text">
-              BTC transaction fees bottomed out earlier this year in February, and since then have remained relatively stable at a median of approximately USD0.10. This is a significant climb down from last year’s all-time high of $34.00 on 23 December.
-              <br />
-              
-            </p>
-          </div>
-          <!-- Card -->
-        </div>
-        <div class="col span-1-of-3">
-          <!-- Card Crypto Love-->
-          <div class="card">
-            <h2>Sub<span>title</span></h2>
-            <h1>cryptolove</h1>
-            <img src="img/cryptolove-img.jpg" alt="crypto love image" class="crypto-image">
-            <p class="card-text">
-              BTC transaction fees bottomed out earlier this year in February, and since then have remained relatively stable at a median of approximately USD0.10. This is a significant climb down from last year’s all-time high of $34.00 on 23 December.
-              <br />
-              
-            </p>
-          </div>
-          <!-- Card -->
-        </div>
-        <div class="col span-1-of-3">
-          <!-- Card Crypto Love-->
-          <div class="card">
-            <h2>Sub<span>title</span></h2>
-            <h1>cryptolove</h1>
-            <img src="img/cryptolove-img.jpg" alt="crypto love image" class="crypto-image">
-            <p class="card-text">
-              BTC transaction fees bottomed out earlier this year in February, and since then have remained relatively stable at a median of approximately USD0.10. This is a significant climb down from last year’s all-time high of $34.00 on 23 December.
-              <br />
-              
-            </p>
-          </div>
-          <!-- Card -->
-        </div>  
-      </div>
-      <div class="row">
+
+      <div class="row" v-if="posts">
         <div class="col span-1-of-3">
           <!-- Card -->
-          <div class="card">
+          <div class="card" v-for="post in posts" v-bind:key="post.id">
             <h2>Sub<span>title</span></h2>
-            <h1>cryptolove</h1>
+            <h1>{{post.fields.title}}
+              <span>{{post.fields.titleEnd}}</span>
+            </h1>
             <img src="img/cryptolove-img.jpg" alt="crypto love image" class="crypto-image">
             <p class="card-text">
-              BTC transaction fees bottomed out earlier this year in February, and since then have remained relatively stable at a median of approximately USD0.10. This is a significant climb down from last year’s all-time high of $34.00 on 23 December.
+              {{post.fields.abstract}}
               <br />
               
             </p>
@@ -107,6 +22,7 @@
           <!-- Card -->
         </div>
       </div>
+
     </section>
 
     <Footer/>
@@ -130,6 +46,23 @@ export default {
     Header,
     Footer
   },
+  data(){
+    return {
+      posts: null
+    }
+  },
+  asyncData(){
+    return client.getEntries(
+        {
+          'content_type': 'article'
+        }
+    )
+    .then((res) => {
+      return {
+      posts: res.items
+      }
+    }).catch(console.error)
+  }
 
 }
 </script>
