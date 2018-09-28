@@ -61,8 +61,5 @@ module.exports = {
     extend(config, ctx) {
       
     }
-  },
-  env: {
-
   }
 }
