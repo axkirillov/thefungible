@@ -8,15 +8,17 @@
         <div class="col span-1-of-3">
           <!-- Card -->
           <div class="card" v-for="post in posts" v-bind:key="post.id">
-            <h1>{{post.fields.title}}
-              <span>{{post.fields.titleEnd}}</span>
-            </h1>
-            <img src="img/bear1.png" alt="crypto love image" class="crypto-image">
-            <p class="card-text">
-              {{post.fields.abstract}}
-              <br />
-              
-            </p>
+            <nuxt-link :to="{path: '/'+post.url}">
+              <h1>{{post.fields.title}}
+                <span>{{post.fields.titleEnd}}</span>
+              </h1>
+              <img src="img/bear1.png" alt="crypto love image" class="crypto-image">
+              <p class="card-text">
+                {{post.fields.abstract}}
+                <br />
+              </p>
+            </nuxt-link>
+            
           </div>
           <!-- Card -->
         </div>
@@ -33,16 +35,9 @@
 import Header from '~/components/Header.vue'
 import Footer from '~/components/Footer.vue'
 
-const contentful = require('contentful')
+import {createClient} from '~/plugins/contentful.js'
 
-let client;
-
-if (process.env.CTF_SPACE_ID){
-  client = contentful.createClient({
-    space: process.env.CTF_SPACE_ID,
-    accessToken: process.env.CTF_CDA_ACCESS_TOKEN
-  })
-}
+const client = createClient()
 
 
 export default {
@@ -62,6 +57,9 @@ export default {
         }
     )
     .then((res) => {
+      res.items.forEach(post =>{
+        post.url = post.fields.title.replace(/\s/g, '-')
+      })
       return {
       posts: res.items
       }
@@ -72,5 +70,8 @@ export default {
 </script>
 
 <style>
-
+ a {
+  text-decoration: none;
+  color: white;
+}
 </style>

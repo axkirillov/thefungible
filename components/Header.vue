@@ -2,7 +2,7 @@
 <header>
   <div class="container">
     <div class="logo">
-      <a href="#"><img src="img/logo.png" alt="img">The<span>fungible</span></a>
+      <a href="/"><img src="img/logo.png" alt="img">The<span>fungible</span></a>
     </div>
     <div class="numbers">
       <div class="btc">

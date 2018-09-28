@@ -4,17 +4,7 @@ const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 const app = express()
 const host = process.env.HOST || '127.0.0.1'
-const port = process.env.PORT || 3010
-
-
-
-if (process.env.NODE_ENV !== 'production'){
-  const CMSKEYS = require('../.contentful.json')
-  process.env.CTF_SPACE_ID = CMSKEYS.CTF_SPACE_ID
-  process.env.CTF_CDA_ACCESS_TOKEN = CMSKEYS.CTF_CDA_ACCESS_TOKEN
-}
-
-
+const port = process.env.PORT || 3011
 
 app.set('port', port)
 
