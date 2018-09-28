@@ -17,7 +17,6 @@ if (config.dev){
    CTF_SPACE_ID : CMSKEYS.CTF_SPACE_ID,
    CTF_CDA_ACCESS_TOKEN : CMSKEYS.CTF_CDA_ACCESS_TOKEN
   }
-  
 }
 
 async function start() {
