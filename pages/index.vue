@@ -37,7 +37,6 @@ import Footer from '~/components/Footer.vue'
 
 import {createClient} from '~/plugins/contentful.js'
 
-const client = createClient()
 
 
 export default {
@@ -51,6 +50,8 @@ export default {
     }
   },
   asyncData({env}){
+    const client = createClient()
+
     return client.getEntries(
         {
           'content_type': 'article'
