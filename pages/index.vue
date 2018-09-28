@@ -11,7 +11,7 @@
             <h1>{{post.fields.title}}
               <span>{{post.fields.titleEnd}}</span>
             </h1>
-            <img src="img/cryptolove-img.jpg" alt="crypto love image" class="crypto-image">
+            <img src="img/bear1.png" alt="crypto love image" class="crypto-image">
             <p class="card-text">
               {{post.fields.abstract}}
               <br />
