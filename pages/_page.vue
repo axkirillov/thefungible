@@ -62,10 +62,16 @@ export default {
 <style>
  .article {
    background-color: #fff;
-   width: 85%;
+   width: 80%;
    padding: 30px;
  }
  .page {
    padding: 0px;
+ }
+
+ @media only screen and (max-width: 480px) {
+   .article {
+   width: 100%;
+   }
  }
 </style>
