@@ -51,7 +51,6 @@ export default {
     }
   },
   asyncData(){
-    const client = createClient()
     return client.getEntries(
         {
           'content_type': 'article'
