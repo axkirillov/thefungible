@@ -7,7 +7,7 @@
       <div class="row" v-if="article">
          <div class="col span-3-of-3">
            <div class="article">
-        {{article.fields.abstract}}
+        {{article.fields.text}}
            </div>
          </div>
       </div>
