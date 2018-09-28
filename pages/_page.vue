@@ -38,9 +38,9 @@ export default {
       article: null
     }
   },
-  asyncData(params){
-    let query = params.params.page.replace(/-/g, ' ')
-    console.log(client  )
+  asyncData(context){
+    let query = context.params.page.replace(/-/g, ' ')
+    const client = createClient()
     if (client) {
       return client.getEntries(
         {
