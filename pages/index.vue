@@ -50,7 +50,7 @@ export default {
       posts: null
     }
   },
-  asyncData(){
+  asyncData({env}){
     return client.getEntries(
         {
           'content_type': 'article'
