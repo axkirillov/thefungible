@@ -64,6 +64,8 @@ export default {
    background-color: #fff;
    width: 80%;
    padding: 30px;
+   font-family: Verdana;
+   line-height: 1.5rem;
  }
  .page {
    padding: 0px;

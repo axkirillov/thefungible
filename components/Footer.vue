@@ -5,7 +5,7 @@
       <a href="#"><img src="img/logo-footer.png" alt="logo">The<span>fungible</span></a>
     </div>
     <div class="copyright">
-      Copyright © 2018 Copyright © 2018 TheFungible.org
+      Copyright © 2018 TheFungible.org
     </div>
     <div class="social">
       <a href="https://www.twitter.com/"><img src="img/twitter-icon.png" alt="img"/></a>
