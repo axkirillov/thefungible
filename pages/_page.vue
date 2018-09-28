@@ -26,8 +26,6 @@ import Footer from '~/components/Footer.vue'
 
 import {createClient} from '~/plugins/contentful.js'
 
-const client = createClient()
-
 export default {
   components: {
     Header,
@@ -41,19 +39,17 @@ export default {
   asyncData(context){
     let query = context.params.page.replace(/-/g, ' ')
     const client = createClient()
-    if (client) {
-      return client.getEntries(
-        {
-          'content_type': 'article',
-          'fields.title[match]': query
-        }
-      )
-      .then((res) => {
-        return {
-        article: res.items[0]
-        }
-      }).catch(console.error)
-    }
+    return client.getEntries(
+      {
+        'content_type': 'article',
+        'fields.title[match]': query
+      }
+    )
+    .then((res) => {
+      return {
+      article: res.items[0]
+      }
+    }).catch(console.error)
   }
 
 }
