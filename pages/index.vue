@@ -8,7 +8,6 @@
         <div class="col span-1-of-3">
           <!-- Card -->
           <div class="card" v-for="post in posts" v-bind:key="post.id">
-            <h2>Sub<span>title</span></h2>
             <h1>{{post.fields.title}}
               <span>{{post.fields.titleEnd}}</span>
             </h1>

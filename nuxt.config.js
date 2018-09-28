@@ -1,10 +1,5 @@
 const pkg = require('./package')
 
-const config = require('./.contentful.json') || {
-  CTF_SPACE_ID: process.env.CTF_SPACE_ID,
-  CTF_CDA_ACCESS_TOKEN: process.env.CTF_CDA_ACCESS_TOKEN,
-}
-
 module.exports = {
   mode: 'universal',
 
@@ -68,7 +63,6 @@ module.exports = {
     }
   },
   env: {
-    CTF_SPACE_ID: config.CTF_SPACE_ID,
-    CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN,
+
   }
 }
