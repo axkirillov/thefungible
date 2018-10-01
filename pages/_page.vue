@@ -7,7 +7,10 @@
       <div class="row" v-if="article">
          <div class="col span-3-of-3">
            <div class="article">
-        {{article.fields.text}}
+             <h1>{{article.fields.title}}
+                <span>{{article.fields.titleEnd}}</span>
+              </h1>
+              <div v-html="compiledMarkdown"></div>
            </div>
          </div>
       </div>
@@ -23,6 +26,7 @@
 
 import Header from '~/components/Header.vue'
 import Footer from '~/components/Footer.vue'
+import marked from 'marked'
 
 const contentful = require('contentful')
 
@@ -34,11 +38,17 @@ const client = contentful.createClient({
 export default {
   components: {
     Header,
-    Footer
+    Footer,
+    marked
   },
   data(){
     return {
       article: null
+    }
+  },
+  computed: {
+    compiledMarkdown: function () {
+      return marked(this.article.fields.text, { sanitize: true })
     }
   },
   asyncData(context){
@@ -75,5 +85,18 @@ export default {
    .article {
    width: 100%;
    }
+ }
+
+ img {
+   width: 100%;
+ }
+
+ p {
+   margin: 1rem 0;
+ }
+
+ h1 {
+   font-size: 2.5rem;
+   line-height: 3rem;
  }
 </style>
