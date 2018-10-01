@@ -99,4 +99,8 @@ export default {
    font-size: 2.5rem;
    line-height: 3rem;
  }
+
+ a {
+   color: blue;
+ }
 </style>
