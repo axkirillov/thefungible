@@ -49,7 +49,7 @@ export default {
         { hid: 'twitter:author', name: 'twitter:author', content: '@thefungible' },     
         { hid: 'twitter:title', name: 'twitter:title', content: this.title },
         { hid: 'twitter:description', name: 'twitter:description', content: this.article.fields.abstract },
-        { hid: 'twitter:image', name: 'twitter:image', content: this.article.fields.preview.fields.file.url },
+        { hid: 'twitter:image', name: 'twitter:image', content: 'http:'+this.article.fields.preview.fields.file.url },
       ]
     }
   },
