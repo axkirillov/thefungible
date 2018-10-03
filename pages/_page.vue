@@ -49,7 +49,7 @@ export default {
         { hid: 'twitter:author', name: 'twitter:author', content: '@thefungible' },     
         { hid: 'twitter:title', name: 'twitter:title', content: this.title },
         { hid: 'twitter:description', name: 'twitter:description', content: this.article.fields.abstract },
-        { hid: 'twitter:image', name: 'twitter:image', content: 'https://images.ctfassets.net/adiaytzymz60/7sGldjIajeOKaMYqeWYU8y/394fdeebe891461f6e461f0b5cc6f92d/bear.png' },
+        { hid: 'twitter:image', name: 'twitter:image', content: this.article.fields.preview.fields.file.url },
       ]
     }
   },
