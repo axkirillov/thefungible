@@ -8,9 +8,9 @@
          <div class="col span-3-of-3">
            <div class="article">
              <h1>{{article.fields.title}}
-                <span>{{article.fields.titleEnd}}</span>
-              </h1>
-              <div v-html="compiledMarkdown"></div>
+              <span>{{article.fields.titleEnd}}</span>
+            </h1>
+            <div v-html="compiledMarkdown"></div>
            </div>
          </div>
       </div>

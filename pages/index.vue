@@ -12,7 +12,7 @@
               <h1>{{post.fields.title}}
                 <span>{{post.fields.titleEnd}}</span>
               </h1>
-              <img src="img/bear1.png" alt="crypto love image" class="crypto-image">
+              <img v-bind:src="post.fields.thumbnail.fields.file.url" alt="crypto love image" class="crypto-image">
               <p class="card-text">
                 {{post.fields.abstract}}
                 <br />
