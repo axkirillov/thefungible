@@ -41,6 +41,18 @@ export default {
     Footer,
     marked
   },
+  head () {
+    return {
+      meta: [
+        { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+        { hid: 'twitter:site', name: 'twitter:site', content: '@thefungible' },
+        { hid: 'twitter:author', name: 'twitter:author', content: '@thefungible' },     
+        { hid: 'twitter:title', name: 'twitter:title', content: this.article.fields.title },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.article.fields.title },
+        { hid: 'twitter:image', name: 'twitter:image', content: 'https://images.ctfassets.net/adiaytzymz60/7sGldjIajeOKaMYqeWYU8y/394fdeebe891461f6e461f0b5cc6f92d/bear.png' },
+      ]
+    }
+  },
   data(){
     return {
       article: null
