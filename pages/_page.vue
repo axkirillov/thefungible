@@ -109,7 +109,7 @@ export default {
    margin: 1rem 0;
  }
 
- h1 {
+ .article h1 {
    font-size: 2.5rem;
    line-height: 3rem;
  }
