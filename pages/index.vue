@@ -5,9 +5,9 @@
     <section>
 
       <div class="row" v-if="posts">
-        <div class="col span-1-of-3">
+        <div class="col span-1-of-3" v-for="post in posts" v-bind:key="post.id">
           <!-- Card -->
-          <div class="card" v-for="post in posts" v-bind:key="post.id">
+          <div class="card">
             <nuxt-link :to="{path: '/'+post.url}">
               <h1>{{post.fields.title}}
                 <span>{{post.fields.titleEnd}}</span>
