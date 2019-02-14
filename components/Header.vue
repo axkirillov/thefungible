@@ -4,7 +4,9 @@
     <div class="logo">
       <a href="/"><img src="img/logo.png" alt="img">The<span>fungible</span></a>
     </div>
-    <div class="numbers">
+
+    <!-- crypto tickers -->
+    <!-- <div class="numbers">
       <div class="btc">
         <p v-if="btc">BTC <span>{{ btc.price_usd | decimal }}$</span></p>
       </div>
@@ -15,7 +17,9 @@
         <p v-if="eos">EOS <span>{{ eos.price_usd | decimal }}$</span></p>
       </div>
 
-    </div>
+    </div> -->
+
+    <!-- searchbar -->
     <!-- <div class="spacer"></div> -->
     <!-- <form action="#" class="search-bar">
       <input type="text" class="search-input" placeholder="">
