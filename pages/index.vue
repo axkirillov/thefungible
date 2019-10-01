@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header/>
   
     <section>
 
@@ -26,14 +25,11 @@
 
     </section>
 
-    <Footer/>
   </div>
   
 </template>
 
 <script>
-import Header from '~/components/Header.vue'
-import Footer from '~/components/Footer.vue'
 
 const contentful = require('contentful')
 
@@ -45,8 +41,7 @@ const client = contentful.createClient({
 
 export default {
   components: {
-    Header,
-    Footer
+
   },
   data(){
     return {

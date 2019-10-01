@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header />
 
     <section class="page">
       <div class="row" v-if="article">
@@ -16,13 +15,11 @@
       </div>
     </section>
 
-    <Footer />
   </div>
 </template>
 
 <script>
-import Header from "~/components/Header.vue";
-import Footer from "~/components/Footer.vue";
+
 import marked from "marked";
 
 const contentful = require("contentful");
@@ -34,8 +31,6 @@ const client = contentful.createClient({
 
 export default {
   components: {
-    Header,
-    Footer,
     marked
   },
   head() {
