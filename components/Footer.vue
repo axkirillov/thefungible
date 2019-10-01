@@ -9,8 +9,8 @@
     </div>
     <div class="social">
       <a href="https://twitter.com/thefungible"><img src="img/twitter-icon.png" alt="img"/></a>
-      <a href="https://www.instagram.com/thefungible"><img src="img/instagram-icon.png" alt="img"/></a>
-      <a href="https://www.facebook.com/thefungible"><img src="img/facebook-icon.png" alt="img"/></a>
+      <!-- <a href="https://www.instagram.com/thefungible"><img src="img/instagram-icon.png" alt="img"/></a>
+      <a href="https://www.facebook.com/thefungible"><img src="img/facebook-icon.png" alt="img"/></a> -->
     </div>
   </div>
 </footer>
