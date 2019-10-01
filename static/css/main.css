@@ -129,29 +129,7 @@ header .container {
   padding-top: 40px;
 }
 
-.logo {
-  text-transform: uppercase;
-}
 
-/* .logo a {
-  font-size: 31px;
-  font-family: bergenmono;
-  font-weight: bold;
-  color: #818991 !important;
-  line-height: 31px;
-  display: flex;
-  text-decoration: none;
-} */
-
-.logo img {
-  width: 30px;
-  height: 40px;
-  margin-right: 5px;
-}
-
-.logo span {
-  color: #CE242B;
-}
 
 .numbers {
   display: flex;
@@ -573,25 +551,7 @@ footer .container {
   justify-content: space-between;
 }
 
-.logo-footer {
-  text-transform: uppercase;
-}
 
-.logo-footer a {
-  font-size: 31px;
-  font-family: bergenmono-regular;
-  font-weight: bold;
-  color: #CFD6D3;
-  line-height: 31px;
-  display: flex;
-  text-decoration: none;
-}
-
-.logo-footer img {
-  width: 30px;
-  height: 40px;
-  margin-right: 5px;
-}
 
 .copyright {
   color: #818991;

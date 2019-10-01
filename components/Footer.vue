@@ -17,5 +17,23 @@
 </template>
 
 <style>
+.logo-footer {
+  text-transform: uppercase;
+}
 
+.logo-footer a {
+  font-size: 31px;
+  font-family: bergenmono-regular;
+  font-weight: bold;
+  color: #CFD6D3;
+  line-height: 31px;
+  display: flex;
+  text-decoration: none;
+}
+
+.logo-footer img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
 </style>
