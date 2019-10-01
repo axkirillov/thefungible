@@ -2,7 +2,7 @@
 <footer>
   <div class="container">
     <div class="logo-footer">
-      <a href="#"><img src="img/grey duck.svg" alt="logo">The<span>fungible</span></a>
+      <a href="/"><img src="img/grey duck.svg" alt="logo">The<span>fungible</span></a>
     </div>
     <div class="copyright">
       Copyright © 2018 TheFungible.org
