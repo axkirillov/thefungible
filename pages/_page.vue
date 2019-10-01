@@ -125,6 +125,7 @@ p {
 .article h1 {
   font-size: 2.5rem;
   line-height: 3rem;
+  margin-top: 1rem;
 }
 
 a {
