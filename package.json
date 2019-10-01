@@ -4,7 +4,7 @@
     "node":"10.x"
   },
   "version": "1.0.0",
-  "description": "Crypto news website",
+  "description": "Blog",
   "author": "Charieheart",
   "private": true,
   "scripts": {
