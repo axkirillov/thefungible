@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios'
 
 export default {
   data () {
@@ -48,15 +48,15 @@ export default {
     }
   },
   mounted () {
-    axios
-      .get('https://api.coinmarketcap.com/v1/ticker/bitcoin/')
-      .then(response => (this.btc = response.data[0]))
-    axios
-      .get('https://api.coinmarketcap.com/v1/ticker/ethereum/')
-      .then (response => (this.eth = response.data[0]))
-    axios
-      .get('https://api.coinmarketcap.com/v1/ticker/eos/')
-      .then (response => (this.eos = response.data[0]))
+    // axios
+    //   .get('https://api.coinmarketcap.com/v1/ticker/bitcoin/')
+    //   .then(response => (this.btc = response.data[0]))
+    // axios
+    //   .get('https://api.coinmarketcap.com/v1/ticker/ethereum/')
+    //   .then (response => (this.eth = response.data[0]))
+    // axios
+    //   .get('https://api.coinmarketcap.com/v1/ticker/eos/')
+    //   .then (response => (this.eos = response.data[0]))
   }
 }
 </script>
