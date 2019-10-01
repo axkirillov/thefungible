@@ -537,44 +537,6 @@ input:checked+label::after {
 
 /* ----- Footer -----*/
 
-footer {
-  font-family: bergenmono-regular;
-  height: 120px;
-  background-color: #fff;
-  width: 100%;
-  padding-top: 44px;
-}
-
-footer .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-
-.copyright {
-  color: #818991;
-  font-size: 12px;
-}
-
-footer .social {
-  display: flex;
-  align-items: center;
-}
-
-footer .social a:not(:last-child) {
-  margin-right: 10px;
-}
-
-footer .social a {
-  width: 26.639px;
-  height: 26.639px;
-}
-
-footer .social a:hover {
-  opacity: .9;
-}
 
 @media only screen and (max-width: 480px) {
   .container {
