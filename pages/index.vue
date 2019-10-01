@@ -66,4 +66,7 @@ a {
   text-decoration: none;
   /* color: white; */
 }
+.card-text{
+  height: 4rem;
+}
 </style>
