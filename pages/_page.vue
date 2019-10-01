@@ -167,8 +167,9 @@ tbody td {
     padding: 10px;
     text-shadow: 1px 1px 1px #fff;
 }
-</style>
 
-<style scoped>
-
+blockquote{
+  background: #fff7d7;
+  padding: 18px 20px;
+}
 </style>
