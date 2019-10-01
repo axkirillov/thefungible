@@ -132,7 +132,13 @@ h3 {
 }
 
 a {
-  color: #5555dd;
+  color: #43438d;
+}
+a:hover{
+  color: #7777dd;
+}
+a:visited{
+  color: #70019c;
 }
 ul {
   margin-left: 1em;
@@ -161,4 +167,8 @@ tbody td {
     padding: 10px;
     text-shadow: 1px 1px 1px #fff;
 }
+</style>
+
+<style scoped>
+
 </style>
