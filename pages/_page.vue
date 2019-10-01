@@ -117,6 +117,8 @@ export default {
  a {
    color: blue;
  }
+ul {
+  margin-left: 1em;
 }
 ol {
   margin-left: 1.3em;
