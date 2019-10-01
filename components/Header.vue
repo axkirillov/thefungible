@@ -2,7 +2,7 @@
 <header>
   <div class="container">
     <div class="logo">
-      <a href="/"><img src="img/logo.png" alt="img">The<span>fungible</span></a>
+      <a href="/"><img src="img/duck.svg" alt="img">The<span>fungible</span></a>
     </div>
 
     <!-- crypto tickers -->
@@ -84,7 +84,7 @@ export default {
 
 .logo img {
   width: 30px;
-  height: 40px;
+  height: 30px;
   margin-right: 5px;
 }
 
