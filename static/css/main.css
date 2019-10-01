@@ -133,15 +133,15 @@ header .container {
   text-transform: uppercase;
 }
 
-.logo a {
+/* .logo a {
   font-size: 31px;
   font-family: bergenmono;
   font-weight: bold;
-  color: #818991;
+  color: #818991 !important;
   line-height: 31px;
   display: flex;
   text-decoration: none;
-}
+} */
 
 .logo img {
   width: 30px;

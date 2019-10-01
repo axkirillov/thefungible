@@ -69,4 +69,26 @@ export default {
 .numbers {
   margin-right: 10px;
 }
+.logo a {
+  font-size: 31px;
+  font-family: bergenmono;
+  font-weight: bold;
+  color: #818991 !important;
+  line-height: 31px;
+  display: flex;
+  text-decoration: none;
+}
+.logo {
+  text-transform: uppercase;
+}
+
+.logo img {
+  width: 30px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.logo span {
+  color: #CE242B;
+}
 </style>
