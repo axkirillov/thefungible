@@ -1,5 +1,8 @@
 {
   "name": "thefungible",
+  "engines":{
+    "node":"10.x"
+  },
   "version": "1.0.0",
   "description": "Crypto news website",
   "author": "Charieheart",
