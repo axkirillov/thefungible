@@ -25,7 +25,7 @@
   font-size: 31px;
   font-family: bergenmono-regular;
   font-weight: bold;
-  color: #CFD6D3;
+  color: #CFD6D3 !important;
   line-height: 31px;
   display: flex;
   text-decoration: none;
