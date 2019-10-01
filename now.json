@@ -12,5 +12,8 @@
         "CTF_SPACE_ID": "@ctf_space_id",
         "CTF_CDA_ACCESS_TOKEN": "@ctf_cda_access_token"
       }
+    },
+    "github": {
+      "silent": true
     }
   }
